@@ -2,14 +2,14 @@
 
 #include "ll/api/mod/NativeMod.h"
 
-namespace my_mod {
+namespace pocket_on_pc {
 
-class MyMod {
+class PocketOnPc {
 
 public:
-    static MyMod& getInstance();
+    static PocketOnPc& getInstance();
 
-    MyMod() : mSelf(*ll::mod::NativeMod::current()) {}
+    PocketOnPc() : mSelf(*ll::mod::NativeMod::current()) {}
 
     [[nodiscard]] ll::mod::NativeMod& getSelf() const { return mSelf; }
 
@@ -30,4 +30,4 @@ private:
     ll::mod::NativeMod& mSelf;
 };
 
-} // namespace my_mod
+} // namespace pocket_on_pc
