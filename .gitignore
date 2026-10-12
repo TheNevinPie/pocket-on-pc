@@ -549,3 +549,4 @@ fabric.properties
 # Project specific ignores
 /.idea/
 /bin/
+*.md
